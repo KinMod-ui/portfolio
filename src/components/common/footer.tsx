@@ -26,9 +26,7 @@ const Footer = () => {
         </div>
 
         <div className={styles.footer_credits}>
-          <div className={styles.footer_credits_text}>
-            © 2023 kin.mod. All Rights Reserved.
-          </div>
+          <div className={styles.footer_credits_text}>© 2023 Kin.mod</div>
         </div>
       </div>
     </React.Fragment>

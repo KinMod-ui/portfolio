@@ -42,11 +42,11 @@ const About = () => {
                 <div className={styles.about_image_container}>
                   <div className={styles.about_image_wrapper}>
                     <Image
-                      src="/logo.png"
+                      src="/kinmod.png"
                       alt="about"
                       className={styles.about_image}
-                      width={100}
-                      height={100}
+                      width={200}
+                      height={200}
                     />
                   </div>
                 </div>

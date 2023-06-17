@@ -16,21 +16,21 @@ import styles from "./styles/socials.module.css";
 const Socials = () => {
   return (
     <div className={styles.socials}>
-      <div className={styles.social}>
+      {/* <div className={styles.social}>
         <Link href={INFO.socials.twitter} target="_blank" rel="noreferrer">
           <div className={styles.social_icon}>
             <FontAwesomeIcon icon={faTwitter} className={styles.social_icon} />
           </div>
           <div className={styles.social_text}>Follow on Twitter</div>
         </Link>
-      </div>
+      </div> */}
 
       <div className={styles.social}>
         <Link href={INFO.socials.github} target="_blank" rel="noreferrer">
           <div className={styles.social_icon}>
             <FontAwesomeIcon icon={faGithub} className={styles.social_icon} />
           </div>
-          <div className={styles.social_text}>Follow on GitHub</div>
+          <div className={styles.social_text}>Follow me on GitHub</div>
         </Link>
       </div>
 
@@ -39,7 +39,7 @@ const Socials = () => {
           <div className={styles.social_icon}>
             <FontAwesomeIcon icon={faLinkedin} className={styles.social_icon} />
           </div>
-          <div className={styles.social_text}>Follow on LinkedIn</div>
+          <div className={styles.social_text}>Follow me on LinkedIn</div>
         </Link>
       </div>
 
@@ -51,7 +51,7 @@ const Socials = () => {
               className={styles.social_icon}
             />
           </div>
-          <div className={styles.social_text}>Follow on Instagram</div>
+          <div className={styles.social_text}>Follow me on Instagram</div>
         </Link>
       </div>
 

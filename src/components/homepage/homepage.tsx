@@ -106,7 +106,7 @@ const Homepage = () => {
           {/* here */}
           <div className={styles.homepage_socials}>
             {/* wowowow */}
-            <Link href={INFO.socials.twitter} target="_blank" rel="noreferrer">
+            <Link href={INFO.socials.linkedin} target="_blank" rel="noreferrer">
               <FontAwesomeIcon
                 icon={faLinkedin}
                 className={styles.homepage_social_icon}

@@ -2,16 +2,14 @@ const INFO = {
   main: {
     title: "Portfolio Website",
     name: "Pratham K.",
-    email: "mailto:impratham2001@gmail.com",
+    email: "impratham2001@gmail.com",
     logo: "/logo.png",
   },
 
   socials: {
     github: "https://github.com/KinMod-ui",
     linkedin: "https://www.linkedin.com/in/pratham-khandelwal-489a79192/",
-    instagram: "https://instagram.com/",
-    stackoverflow: "https://stackoverflow.com/",
-    facebook: "https://facebook.com/",
+    instagram: "https://instagram.com/k1nmod",
   },
 
   homepage: {
