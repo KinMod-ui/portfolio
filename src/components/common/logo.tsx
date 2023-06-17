@@ -2,8 +2,6 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import INFO from "../data/user";
-
 import styles from "./styles/logo.module.css";
 
 const Logo = (props: { width: number; link: boolean }) => {

@@ -5,6 +5,11 @@ import styles from "./styles/navBar.module.css";
 const NavBar = (props: { active: string }) => {
   const { active } = props;
 
+  const st = styles;
+  if (!st.nav_item || !st.active) {
+    return <div>Hey</div>;
+  }
+
   return (
     <>
       <div className={styles.nav_container}>
@@ -14,8 +19,8 @@ const NavBar = (props: { active: string }) => {
               <li
                 className={
                   active === "home"
-                    ? `${styles.nav_item} ${styles.active}`
-                    : styles.nav_item
+                    ? `${st.nav_item} ${st.active}`
+                    : st.nav_item
                 }
               >
                 <Link href="/">Home</Link>
@@ -23,8 +28,8 @@ const NavBar = (props: { active: string }) => {
               <li
                 className={
                   active === "about"
-                    ? `${styles.nav_item} ${styles.active}`
-                    : styles.nav_item
+                    ? `${st.nav_item} ${st.active}`
+                    : st.nav_item
                 }
               >
                 <Link href="/about">About</Link>
@@ -32,8 +37,8 @@ const NavBar = (props: { active: string }) => {
               <li
                 className={
                   active === "projects"
-                    ? `${styles.nav_item}  ${styles.active}`
-                    : styles.nav_item
+                    ? `${st.nav_item}  ${st.active}`
+                    : st.nav_item
                 }
               >
                 <Link href="/projects">Projects</Link>
@@ -42,8 +47,8 @@ const NavBar = (props: { active: string }) => {
               <li
                 className={
                   active === "contact"
-                    ? `${styles.nav_item} ${styles.active}`
-                    : styles.nav_item
+                    ? `${st.nav_item} ${st.active}`
+                    : st.nav_item
                 }
               >
                 <Link href="/contact">Contact</Link>

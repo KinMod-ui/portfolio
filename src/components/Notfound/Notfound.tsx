@@ -15,8 +15,14 @@ const NotFound = () => {
     setLink(window.location.href);
   }, []);
 
+  const st = styles.not_found;
+
+  if (!st) {
+    return <div>Hey from Notfound</div>;
+  }
+
   return (
-    <div className={`${styles.not_found} page_content`}>
+    <div className={`${st} page_content`}>
       <NavBar active="none" />
       <div className="content_wrapper">
         <div className={styles.notfound_logo_container}>
@@ -30,9 +36,9 @@ const NotFound = () => {
               Oops! <FontAwesomeIcon icon={faFaceSadTear} />
             </div>
             <div className={styles.not_found_message}>
-              We can't seem to find the page you're looking for.
+              We can&apos;t seem to find the page you&apos;re looking for.
               <br />
-              The requested URL "{link}" was not found on this server.
+              The requested URL was not found on this server.
             </div>
             <Link href="/" className={styles.not_found_link}>
               Go back to the home page
