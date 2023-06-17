@@ -45,6 +45,7 @@
 
 @media (max-width: 600px) {
   .footer {
+    margin-left: 22px;
     flex-direction: column;
     height: 85px;
   }
@@ -52,10 +53,15 @@
   .footer_links {
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: right;
   }
 
   .footer_nav_link_list {
     width: 100%;
+  }
+
+  .footer_credits_text {
+    padding-top: 20px;
+    padding-right: 70px;
   }
 }

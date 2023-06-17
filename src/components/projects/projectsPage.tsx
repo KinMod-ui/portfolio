@@ -7,7 +7,7 @@ import AllProjects from "./allProjects";
 
 import styles from "./styles/projects.module.css";
 
-const Projects = () => {
+const Projects = (repo) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -39,7 +39,7 @@ const Projects = () => {
             </div>
 
             <div className={styles.projects_list}>
-              <AllProjects />
+              <AllProjects repo={repo.repo} />
             </div>
           </div>
           <div className="page_footer">

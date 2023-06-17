@@ -27,6 +27,12 @@ const config = {
         port: "",
         pathname: "/npm/programming-languages-logos/**",
       },
+      {
+        protocol: "https",
+        hostname: "avatars.githubusercontent.com",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
 };

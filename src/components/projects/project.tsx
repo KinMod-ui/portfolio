@@ -21,7 +21,13 @@ const Project = (props: {
         <Link href={link}>
           <div className={styles.project_container}>
             <div className={styles.project_logo}>
-              <Image src={logo} alt="logo" height={10} width={10} />
+              <Image
+                src={logo}
+                alt="logo"
+                height={10}
+                width={10}
+                unoptimized={true}
+              />
             </div>
             <div className={styles.project_title}>{title}</div>
             <div className={styles.project_description}>{description}</div>
