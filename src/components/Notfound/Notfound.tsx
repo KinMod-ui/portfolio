@@ -38,7 +38,7 @@ const NotFound = () => {
             <div className={styles.not_found_message}>
               We can&apos;t seem to find the page you&apos;re looking for.
               <br />
-              The requested URL was not found on this server.
+              The requested URL &quot;{link}&quot; was not found on this server.
             </div>
             <Link href="/" className={styles.not_found_link}>
               Go back to the home page

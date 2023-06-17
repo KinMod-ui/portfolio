@@ -19,5 +19,15 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn.jsdelivr.net",
+        port: "",
+        pathname: "/npm/programming-languages-logos/**",
+      },
+    ],
+  },
 };
 export default config;
