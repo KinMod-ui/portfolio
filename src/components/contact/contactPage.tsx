@@ -21,7 +21,7 @@ const Contact = () => {
         <div className="content_wrapper">
           <div className={styles.contact_logo_container}>
             <div className={styles.contact_logo}>
-              <Logo width={46} />
+              <Logo width={46} link={true} />
             </div>
           </div>
 
