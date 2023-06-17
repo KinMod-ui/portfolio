@@ -5,9 +5,16 @@ import Footer from "../common/footer";
 import Logo from "../common/logo";
 import AllProjects from "./allProjects";
 
+import type { Repositories } from "@saber2pr/types-github-api";
+
 import styles from "./styles/projects.module.css";
 
-const Projects = (repo) => {
+interface temp {
+  repo: Repositories;
+}
+
+const Projects = ({ repo }: temp) => {
+  console.log(repo);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -39,7 +46,7 @@ const Projects = (repo) => {
             </div>
 
             <div className={styles.projects_list}>
-              <AllProjects repo={repo.repo} />
+              <AllProjects repo={repo} />
             </div>
           </div>
           <div className="page_footer">

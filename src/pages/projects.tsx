@@ -3,6 +3,8 @@ import Projects from "../components/projects/projectsPage";
 
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
 
+import type { Repositories } from "@saber2pr/types-github-api";
+
 export default function Home({
   repos,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
@@ -20,13 +22,13 @@ export default function Home({
 }
 
 export const getStaticProps: GetStaticProps<{
-  repo: any;
+  repos: Repositories;
 }> = async () => {
-  const res = await fetch(
+  let repos = (await fetch(
     "https://api.github.com/users/KinMod-ui/repos?sort=created"
-  );
+  ).then((res) => res.json())) as Repositories;
 
-  let repos = await res.json();
+  // let repos: Repositories = await res.json();
   const allowed = [
     "twitterClone",
     "Nasa-rocket-project",
@@ -34,11 +36,15 @@ export const getStaticProps: GetStaticProps<{
     "PostOffice",
     "portfolio",
   ];
-  repos = repos.filter((repo) => allowed.includes(repo.name));
+  repos = repos.filter(
+    (repo) => allowed.includes(repo.name) && !!repo.homepage
+  );
+
   //   console.log(
   //     "here",
   //     repos.map((r) => r.name)
   //   );
+
   return {
     props: {
       repos,
