@@ -36,9 +36,7 @@ export const getStaticProps: GetStaticProps<{
     "PostOffice",
     "portfolio",
   ];
-  repos = repos.filter(
-    (repo) => allowed.includes(repo.name) && !!repo.homepage
-  );
+  repos = repos.filter((repo) => allowed.includes(repo.name));
 
   //   console.log(
   //     "here",

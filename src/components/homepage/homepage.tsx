@@ -14,8 +14,13 @@ import INFO from "../data/user";
 
 import styles from "./styles/homepage.module.css";
 import AllProjects from "../projects/allProjects";
+import { Repositories } from "@saber2pr/types-github-api";
 
-const Homepage = () => {
+interface temp {
+  repo: Repositories;
+}
+
+const Homepage = ({ repo }: temp) => {
   const [stayLogo, setStayLogo] = useState(false);
   const [logoSize, setLogoSize] = useState(80);
   const [oldLogoSize, setOldLogoSize] = useState(80);
@@ -66,79 +71,85 @@ const Homepage = () => {
   }
 
   return (
-    <div className="page_content">
-      <Navbar active="home" />
-      <div className="content_wrapper">
-        <div className={styles.homepage_logo_container}>
-          <div style={logoStyle}>
-            <Logo width={logoSize} link={true} />
-          </div>
-        </div>
-
-        <div className={styles.homepage_container}>
-          <div className={styles.homepage_first_area}>
-            <div className={styles.homepage_first_area_left_side}>
-              <div className={`title ${stl.homepage_title}`}>
-                {INFO.homepage.title}
-              </div>
-
-              <div className={`subtitle ${stl.homepage_subtitle}`}>
-                {INFO.homepage.description}
-              </div>
+    <>
+      <div className="page_content">
+        <Navbar active="home" />
+        <div className="content_wrapper">
+          <div className={styles.homepage_logo_container}>
+            <div style={logoStyle}>
+              <Logo width={logoSize} link={true} />
             </div>
+          </div>
 
-            <div className={styles.homepage_first_area_right_side}>
-              <div className={styles.homepage_image_container}>
-                <div className={styles.homepage_image_wrapper}>
-                  <Image
-                    src="/kinmod.png"
-                    alt="about"
-                    className={styles.homepage_image}
-                    width={200}
-                    height={200}
-                  />
+          <div className={styles.homepage_container}>
+            <div className={styles.homepage_first_area}>
+              <div className={styles.homepage_first_area_left_side}>
+                <div className={`title ${stl.homepage_title}`}>
+                  {INFO.homepage.title}
+                </div>
+
+                <div className={`subtitle ${stl.homepage_subtitle}`}>
+                  {INFO.homepage.description}
+                </div>
+              </div>
+
+              <div className={styles.homepage_first_area_right_side}>
+                <div className={styles.homepage_image_container}>
+                  <div className={styles.homepage_image_wrapper}>
+                    <Image
+                      src="/kinmod.png"
+                      alt="about"
+                      className={styles.homepage_image}
+                      width={200}
+                      height={200}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          {/* here */}
-          <div className={styles.homepage_socials}>
-            {/* wowowow */}
-            <Link href={INFO.socials.linkedin} target="_blank" rel="noreferrer">
-              <FontAwesomeIcon
-                icon={faLinkedin}
-                className={styles.homepage_social_icon}
-              />{" "}
-            </Link>
-            <Link href={INFO.socials.github} target="_blank" rel="noreferrer">
-              <FontAwesomeIcon
-                icon={faGithub}
-                className={styles.homepage_social_icon}
-              />
-            </Link>
+            {/* here */}
+            <div className={styles.homepage_socials}>
+              {/* wowowow */}
+              <Link
+                href={INFO.socials.linkedin}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  className={styles.homepage_social_icon}
+                />{" "}
+              </Link>
+              <Link href={INFO.socials.github} target="_blank" rel="noreferrer">
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  className={styles.homepage_social_icon}
+                />
+              </Link>
 
-            <Link
-              href={`mailto:${INFO.main.email}`}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FontAwesomeIcon
-                icon={faMailBulk}
-                className={styles.homepage_social_icon}
-              />
-            </Link>
-          </div>
+              <Link
+                href={`mailto:${INFO.main.email}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={faMailBulk}
+                  className={styles.homepage_social_icon}
+                />
+              </Link>
+            </div>
 
-          <div className="homepage_projects">
-            <AllProjects />
-          </div>
+            <div className="homepage_projects">
+              <AllProjects repo={repo} parent="hp" />
+            </div>
 
-          <div className="page_footer">
-            <Footer />
+            <div className="page_footer">
+              <Footer />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

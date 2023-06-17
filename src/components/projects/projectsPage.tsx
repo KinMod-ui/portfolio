@@ -14,7 +14,7 @@ interface temp {
 }
 
 const Projects = ({ repo }: temp) => {
-  console.log(repo);
+  // console.log(repo);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -46,7 +46,7 @@ const Projects = ({ repo }: temp) => {
             </div>
 
             <div className={styles.projects_list}>
-              <AllProjects repo={repo} />
+              <AllProjects repo={repo} parent="pp" />
             </div>
           </div>
           <div className="page_footer">
