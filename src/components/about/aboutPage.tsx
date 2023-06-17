@@ -15,6 +15,11 @@ const About = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const stl = styles;
+  if (!stl.about_title || !stl.about_subtitle) {
+    return <div>Hello</div>;
+  }
+
   return (
     <>
       <div className="page_content">
@@ -29,11 +34,11 @@ const About = () => {
           <div className={styles.about_container}>
             <div className={styles.about_main}>
               <div className={styles.about_right_side}>
-                <div className={`title ${styles.about_title}`}>
+                <div className={`title ${stl.about_title}`}>
                   {INFO.about.title}
                 </div>
 
-                <div className={`subtitle ${styles.about_subtitle}`}>
+                <div className={`subtitle ${stl.about_subtitle}`}>
                   {INFO.about.description}
                 </div>
               </div>

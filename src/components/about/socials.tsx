@@ -3,7 +3,6 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
-  faTwitter,
   faGithub,
   faLinkedin,
   faInstagram,
@@ -16,15 +15,6 @@ import styles from "./styles/socials.module.css";
 const Socials = () => {
   return (
     <div className={styles.socials}>
-      {/* <div className={styles.social}>
-        <Link href={INFO.socials.twitter} target="_blank" rel="noreferrer">
-          <div className={styles.social_icon}>
-            <FontAwesomeIcon icon={faTwitter} className={styles.social_icon} />
-          </div>
-          <div className={styles.social_text}>Follow on Twitter</div>
-        </Link>
-      </div> */}
-
       <div className={styles.social}>
         <Link href={INFO.socials.github} target="_blank" rel="noreferrer">
           <div className={styles.social_icon}>

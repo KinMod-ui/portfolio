@@ -1,7 +1,7 @@
 import About from "../components/about/aboutPage";
 import Head from "next/head";
 
-const Home = (props: any) => {
+const Home = () => {
   return (
     <>
       <Head>

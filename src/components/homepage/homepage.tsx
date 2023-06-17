@@ -4,14 +4,7 @@ import Link from "next/link";
 
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTwitter,
-  faGithub,
-  faLinkedin,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
-
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import Footer from "../common/footer";
 import Navbar from "../common/navBar";
@@ -67,6 +60,11 @@ const Homepage = () => {
     boxShadow: stayLogo ? "0px 4px 10px rgba(0, 0, 0, 0.25)" : "none",
   };
 
+  const stl = styles;
+  if (!stl.homepage_title || !stl.homepage_subtitle) {
+    return <div>Hello</div>;
+  }
+
   return (
     <div className="page_content">
       <Navbar active="home" />
@@ -80,11 +78,11 @@ const Homepage = () => {
         <div className={styles.homepage_container}>
           <div className={styles.homepage_first_area}>
             <div className={styles.homepage_first_area_left_side}>
-              <div className={`title ${styles.homepage_title}`}>
+              <div className={`title ${stl.homepage_title}`}>
                 {INFO.homepage.title}
               </div>
 
-              <div className={`subtitle ${styles.homepage_subtitle}`}>
+              <div className={`subtitle ${stl.homepage_subtitle}`}>
                 {INFO.homepage.description}
               </div>
             </div>
