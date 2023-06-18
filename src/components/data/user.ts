@@ -19,7 +19,7 @@ const INFO = {
   },
 
   about: {
-    title: "I’m Kinmod. I am an upcoming SDE at Samsung R&D Institute, Delhi",
+    title: "I’m Kinmod. I am an upcoming SDE at Samsung",
     description:
       "Hello there! I'm not just your average engineer—I'm a part-time nerd, an avid bookworm(mostly tech related :p), a dedicated gamer, and a fitness enthusiast. I hold a B.Tech degree in Computer Science from The LNMIIT (Jaipur), and I'm passionate about all things related to technology and coding.heheI've had the opportunity to work on a diverse range of projects, and I take pride in the progress I've made throughout my journey. If you're interested in any of the projects I've worked on, please feel free to check out the code and suggest any improvements or enhancements you might have in mind. Collaborating with others is a great way to learn and grow, and I'm always open to new ideas and feedback.",
   },
