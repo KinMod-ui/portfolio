@@ -38,8 +38,8 @@ const Contact = () => {
               <span className="font-bold">
                 <a href={`mailto:${INFO.main.email}`}>{INFO.main.email}</a>
               </span>
-              . I make an effort to respond to all messages within 24 hours,
-              although it may take me longer during busy periods. Finally, if
+              . I make an effort to respond to all messages as soon as possible
+              , although it may take me longer during busy periods. Finally, if
               you prefer to connect on social media, you can find me on{" "}
               <span className="font-bold">
                 <a
