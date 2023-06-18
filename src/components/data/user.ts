@@ -13,15 +13,15 @@ const INFO = {
   },
 
   homepage: {
-    title: "Full-stack web and mobile app developer, and amateur astronaut.",
+    title: "Software and Web developer, and amateur superhero.",
     description:
-      "I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.",
+      "Greetings! I'm a Tall, Dark, Sexy and humble backend developer extraordinaire, specializing in the MERN stack and Next.js. With a focus on security and reliability, I weave robust and scalable web applications. I find joy in unraveling intricate challenges and forever honing my skills. Dedication drives me to craft code that surpasses industry standards. Seeking new opportunities, I embark on endeavors that nurture my growth as a developer. Together, let's build a digital world that thrives on humble excellence!",
   },
 
   about: {
     title: "I’m Kinmod. I am from Rajasthan, India.",
     description:
-      "I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to. If you're interested in any of the projects I've worked on, please feel free to check out the code and suggest any improvements or enhancements you might have in mind. Collaborating with others is a great way to learn and grow, and I'm always open to new ideas and feedback.",
+      "Hello there! I'm not just your average engineer—I'm a part-time nerd, an avid bookworm(mostly tech related :p), a dedicated gamer, and a fitness enthusiast. I hold a B.Tech degree in Computer Science from The LNMIIT (Jaipur), and I'm passionate about all things related to technology and coding.heheI've had the opportunity to work on a diverse range of projects, and I take pride in the progress I've made throughout my journey. If you're interested in any of the projects I've worked on, please feel free to check out the code and suggest any improvements or enhancements you might have in mind. Collaborating with others is a great way to learn and grow, and I'm always open to new ideas and feedback.",
   },
 
   articles: {

@@ -20,6 +20,14 @@ const About = () => {
     return <div>Hello</div>;
   }
 
+  const replacedString = INFO.about.description.split("hehe");
+  // console.log(replacedString);
+  // const newString = replacedString.map((s) => {
+  //   return s + "\n";
+  // });
+  const newString = replacedString.join("\n\n");
+  console.log(newString);
+
   return (
     <>
       <div className="page_content">
@@ -38,8 +46,10 @@ const About = () => {
                   {INFO.about.title}
                 </div>
 
-                <div className={`subtitle ${stl.about_subtitle}`}>
-                  {INFO.about.description}
+                <div
+                  className={`subtitle ${stl.about_subtitle} display-linebreak`}
+                >
+                  {newString}
                 </div>
               </div>
 

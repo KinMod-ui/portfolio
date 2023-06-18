@@ -8,6 +8,7 @@ import Logo from "../common/logo";
 
 import styles from "./styles/404.module.css";
 import projectStyles from "../projects/styles/projects.module.css";
+import Footer from "../common/footer";
 
 const NotFound = () => {
   const [link, setLink] = useState("");

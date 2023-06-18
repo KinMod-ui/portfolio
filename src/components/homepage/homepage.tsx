@@ -14,7 +14,7 @@ import INFO from "../data/user";
 
 import styles from "./styles/homepage.module.css";
 import AllProjects from "../projects/allProjects";
-import { Repositories } from "@saber2pr/types-github-api";
+import type { Repositories } from "@saber2pr/types-github-api";
 
 interface temp {
   repo: Repositories;
