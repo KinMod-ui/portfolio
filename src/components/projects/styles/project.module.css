@@ -70,4 +70,8 @@
   .project {
     height: 300px;
   }
+
+  .project_link {
+    padding-bottom: 50px;
+  }
 }

@@ -34,8 +34,4 @@
   .projects_project {
     width: calc(100% / 2);
   }
-
-  .projects_list {
-    display: block;
-  }
 }

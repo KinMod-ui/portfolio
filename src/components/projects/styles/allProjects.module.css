@@ -17,7 +17,6 @@
 
 @media (max-width: 600px) {
   .all_projects_project {
-    width: max-content;
-    padding-bottom: -30px;
+    width: 100%;
   }
 }
